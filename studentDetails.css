@@ -1,0 +1,30 @@
+*{
+    margin: 20px;
+}
+
+.spaces{
+    padding: 10px;
+}
+
+
+.btn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+table, th,td {
+  text-align: center;
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ECC5FB;
+}
+tbody tr:nth-child(odd) {
+    background-color: #CDF0EA;
+}

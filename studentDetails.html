@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="studentDetails.css">
+    <title>Student Table</title>
+</head>
+
+<body>
+    <center>
+        <h1>Student Details Form</h1>
+    </center>
+    <div>
+        <form id="student-form">
+
+            <label for="roll-no">Roll No:</label>
+            <input type="text" id="roll-no" name="roll-no">
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name"><br>
+
+            <label for="father-name">Father's Name:</label>
+            <input type="text" id="father-name" name="father-name">
+
+            <label for="class">Class:</label>
+            <input type="text" id="class" name="class">
+
+            <label for="subjects">Subjects:</label>
+            <input type="text" id="subjects" name="subjects"><br>
+
+            <label for="cgpa">CGPA:</label>
+            <input type="text" id="cgpa" name="cgpa">
+
+            <br><br>
+
+            <button type="button" class="btn" onclick="getFormValues()">Submit</button>
+        </form>
+    </div>
+
+    <center>
+        <h1>
+            Student Details
+        </h1>
+        <div>
+            <table border="1" id="studentTable">
+                <thead>
+                    <tr>
+                        <th class="spaces">Roll No</th>
+                        <th class="spaces">First Name</th>
+                        <th class="spaces">Last Name</th>
+                        <th class="spaces">Father's name</th>
+                        <th class="spaces">Class</th>
+                        <th class="spaces">Subjects</th>
+                        <th class="spaces">CGPA</th>
+                        <th class="spaces">Edit/Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="student-table-body" class="spaces">
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="studentDetails.js"></script>
+</body>
+
+</html>
